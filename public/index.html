@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <title>First Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+      
+          <!-- Heading -->
+          <div id="header" class="row">
+            <div class="section">
+              <div class="white-text center-align">
+                <h2>Galactic Voyager</h2>
+              </div>
+            </div>
+          </div>
+      
+      
+        </div>
+      
+      
+       
+          <div id="front-page" class="row container center white-text">
+            <div class="section">
+              <a class="btn-floating pulse btn-large #1565c0 blue lighten-1" id="planet-btn" href="#"></a> CHOOSE YOUR
+              DESTINATION
+            </div>
+          </div>
+        </div>
+      
+        <div id="planet-div">
+          <div class="planet" id="sun"></div>
+          <div id="planets"></div>
+      
+          <button class="waves-effect waves-red accent-4 btn-flat btn-large" id="pause">||</button>
+      
+        </div>
+      
+        
+      
+        <!-- The Modal -->
+        <div id="planetFacts" class="modal">
+      
+          <!-- Modal content -->
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <div class="planetHeader"></div>
+          </div>
+      
+          <div class="modal-content">           
+      
+          </div>
+      
+        </div> 
+      
+      <div class="planetCard">
+        <div class="row v-align-middle">
+          <div class="col s12 m4 offset-m4">
+              <div class="card">
+                <div class="card-action #0d47a1 blue darken-4 white-text">
+                  <span class="close">&times;</span>
+                  <div class="planetHeader"></div>
+                  
+                </div>
+                <div class="card-content text-white">
+                  <div class="planetPicture" style="height:250px;max-width: 100%;"></div>
+                  <div class="planetInfo"></div>
+                   <br>
+                  <a href="/form">Click here to fill out form</a> | <a href="/allvoyages">Click here to see past trips</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      
+</body>
+<!--JavaScript at end of body for optimized loading-->
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('select').formSelect();
+  });
+</script>
+<script type="text/javascript" src="./js/app.js"></script>
+
+
+
+</html>
